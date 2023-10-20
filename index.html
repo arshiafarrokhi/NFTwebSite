@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <!-- custom css-->
+    <link rel="stylesheet" href="assets/css/master.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body id="body" onload="autotype()" onresize="removeHamb()">
+    <main>
+        <section class="container-fluid m-0 p-0 first100vh">
+            <img class="background-section1" src="assets/images/background-section1.png" alt="">
+            <section class="container-fluid _navbar">
+                <section class="container-fluid container-xxl">
+                    <div class="row">
+                        <!-- ///////////////////////////////////////////start desktop menu//////////////////////////////////////// -->
+                        <nav class="col-12 d-flex mt-3 navDesktop">
+                            <div
+                                class="col-6 col-md-2 d-flex justify-content-start justify-content-md-center align-content-start align-content-md-center">
+                                <img src="assets/images/101.png">
+                            </div>
+                            <ul
+                                class="col-8 d-md-flex d-none justify-content-end justify-content-md-center align-content-end align-content-md-center h-auto m-0 p-0">
+                                <li><a class="navLink_desktop" href="#">Home</a></li>
+                                <li class="navLink_desktop navLink_desktopSubMenu"><a href="#">Explore <i
+                                            class="bi bi-plus-lg"></i></a>
+                                    <ul class="subMenu">
+                                        <li><a class="navLinkSubMenu" href="#">Explore Action</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">Live Action</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">Item Details</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">Item Active</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navLink_desktop navLink_desktopSubMenu"><a href="#">Pages <i
+                                            class="bi bi-plus-lg"></i></a>
+                                    <ul class="subMenu">
+                                        <li><a class="navLinkSubMenu" href="#">Add Walet</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">Recent Activity</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">Team</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">User Page</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">404 Error</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navLink_desktop navLink_desktopSubMenu"><a href="#">Blog <i
+                                            class="bi bi-plus-lg"></i></a>
+                                    <ul class="subMenu">
+                                        <li><a class="navLinkSubMenu" href="#">Blog Grid</a></li>
+                                        <li><a class="navLinkSubMenu" href="#">Blog List Sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="navLink_desktop" href="#">About Us</a></li>
+                                <li><a class="navLink_desktop" href="#">Contact Us</a></li>
+                            </ul>
+                            <div
+                                class="col-6 col-md-2 d-md-flex d-none justify-content-end justify-content-md-center align-content-end align-content-md-center h-auto m-0 p-0 connectWalletButton">
+                                <a class="text-nowrap" href="#">Connect Wallet</a>
+                            </div>
+                            <div
+                                class="col-6 col-md-2 d-md-none d-flex justify-content-end justify-content-md-center align-content-end align-content-md-center h-auto m-0 p-0 ">
+                                <img class="hamIcon" src="assets/images/HamMenu.png" alt="">
+                            </div>
+                        </nav>
+                        <!-- ///////////////////////////////////////////end desktop menu//////////////////////////////////////// -->ّ
+                        <!-- ///////////////////////////////////////////start hamb menu//////////////////////////////////////// -->ّ
+                        <nav class="navHamb">
+                            <ul class="p-0 d-flex flex-column align-items-center justify-content-center">
+                                <li class="navLink_hamb"><a href="#">Products</a></li>
+                                <li class="navLink_hamb"><a href="#">Apps & Games</a></li>
+                                <li class="navLink_hamb"><a href="#">features</a></li>
+                                <li class="navLink_hamb"><a href="#">Support</a></li>
+                                <li class="navLink_hamb"><a href="#">About</a></li>
+                            </ul>
+                            <div class="connectWalletButton connectWalletButtonHam">
+                                <a href="#">Connect Wallet</a>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </section>
+            <!-- ///////////////////////////////////////////end hamb menu//////////////////////////////////////// -->ّ
+            <!-- ///////////////////////////////////////////start landing page//////////////////////////////////////// -->
+            <section class="container-fluid container-xxl">
+                <div class="row">
+                    <div class="col-12 col-md-6 h-100 text-white">
+                        <div class="h-100 d-flex flex-column justify-content-center align-items-start flex-wrap h-100"
+                            data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                            <h6 class="headText mb-4">Nedo Marketplace</h6>
+                            <h1 class="fw-bolder display-2 mb-4">Discover, Collect & Sell <span class="gradiantText"
+                                    id="gradiantText"></span> </h1>
+                            <p class="landingLorem mb-4">Here are many variations of passages of Lorem Ipsum available
+                                but the new majority have suffer alteration in by injected humour or randomised words.
+                                alteration in by injected humour or randomised words. Lorem alteration in by injected
+                                humour or randomised words. Lorem alteration in by injected humour or randomised words.
+                                Lorem Lorem ipsum dolor sit amet
+                                consectetur adipiscing elits sed aliquam.</p>
+                            <div class="d-flex w-100 mb-4">
+                                <div class="connectWalletButton landingbutton1 text-center">
+                                    <a class="text-nowrap" href="#">Get Started</a>
+                                </div>
+                                <div class="connectWalletButton landingbutton2 text-center">
+                                    <a class="text-nowrap" href="#">Create NFT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center mb-5">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img class="sliderImage h-100 w-100" src="assets/images/103.png" alt="">
+                                        <figcaption
+                                            class="d-flex align-items-center justify-content-around text-white w-75 sliderFigcaption">
+                                            <h5 class="m-0 p-0">68.4 <span class="eth">ETH</span></h5>
+                                            <div class="connectWalletButton text-center">
+                                                <a class="text-nowrap" href="#">Connect Wallet</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img class="sliderImage h-100 w-100" src="assets/images/104.png" alt="">
+                                        <figcaption
+                                            class="d-flex align-items-center justify-content-around text-white w-75 sliderFigcaption">
+                                            <h5 class="m-0 p-0">68.4 <span class="eth">ETH</span></h5>
+                                            <div class="connectWalletButton text-center">
+                                                <a class="text-nowrap" href="#">Connect Wallet</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure>
+                                        <img class="sliderImage h-100 w-100" src="assets/images/105.png" alt="">
+                                        <figcaption
+                                            class="d-flex align-items-center justify-content-around text-white w-75 sliderFigcaption">
+                                            <h5 class="m-0 p-0">68.4 <span class="eth">ETH</span></h5>
+                                            <div class="connectWalletButton text-center">
+                                                <a class="text-nowrap" href="#">Connect Wallet</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- ///////////////////////////////////////////end 100vh 1//////////////////////////////////////// -->ّ
+        <!-- ///////////////////////////////////////////start 100vh 2//////////////////////////////////////// -->
+        <section class="container-fluid m-0 p-0 seccend100vh">
+            <section class="container-fluid container-xxl">
+                <div class="row text-white">
+                    <div>
+                        <div>
+                            <h5 class="text-center greenColor mt-5">Auction</h5>
+                            <h3 class="text-center my-4 fw-bold">Live Auctions</h3>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 px-5">
+                            <div data-aos-easing="ease-in-out" data-aos-duration="500" data-aos="zoom-in"
+                                class="Second100vhCard d-flex flex-column align-items-center justify-content-center">
+                                <figure>
+                                    <img src="assets/images/112.jpg" alt="">
+                                    <figcaption class="connectWalletButton">
+                                        <a class="text-nowrap" href="#">Place Bid</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="d-flex underCard">
+                                    <div class="d-flex">
+                                        <figure class="profilePicture"><img src="assets/images/107.jpg" alt=""></figure>
+                                        <div>
+                                            <p class="text-nowrap meloWith">Creator</p>
+                                            <p class="text-nowrap">Ash Winsley</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-end align-items-center">
+                                        <p class="text-nowrap meloWith">Current Bid</p>
+                                        <p class="text-nowrap">5.66 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between underunderCard mt-2">
+                                    <h5 class="underunderCardGreen">The Fantasy Flower</h5>
+                                    <p class="underunderCardBG">BSC</p>
+                                </div>
+                            </div>
+                            <div data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos="zoom-in"
+                                class="Second100vhCard d-flex flex-column align-items-center justify-content-center">
+                                <figure>
+                                    <img src="assets/images/106.jpg" alt="">
+                                    <figcaption class="connectWalletButton">
+                                        <a class="text-nowrap" href="#">Place Bid</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="d-flex underCard">
+                                    <div class="d-flex">
+                                        <figure class="profilePicture"><img src="assets/images/109.jpg" alt=""></figure>
+                                        <div>
+                                            <p class="text-nowrap meloWith">Creator</p>
+                                            <p class="text-nowrap">Ash Winsley</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-end align-items-center">
+                                        <p class="text-nowrap meloWith">Current Bid</p>
+                                        <p class="text-nowrap">5.66 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between underunderCard mt-2">
+                                    <h5 class="underunderCardGreen">The Fantasy Flower</h5>
+                                    <p class="underunderCardBG">BSC</p>
+                                </div>
+                            </div>
+                            <div data-aos-easing="ease-in-out" data-aos-duration="1500" data-aos="zoom-in"
+                                class="Second100vhCard d-flex flex-column align-items-center justify-content-center">
+                                <figure>
+                                    <img src="assets/images/108.jpg" alt="">
+                                    <figcaption class="connectWalletButton">
+                                        <a class="text-nowrap" href="#">Place Bid</a>
+                                    </figcaption>
+                                </figure>
+                                <div class="d-flex underCard">
+                                    <div class="d-flex">
+                                        <figure class="profilePicture"><img src="assets/images/111.jpg" alt=""></figure>
+                                        <div>
+                                            <p class="text-nowrap meloWith">Creator</p>
+                                            <p class="text-nowrap">Ash Winsley</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-end align-items-center">
+                                        <p class="text-nowrap meloWith">Current Bid</p>
+                                        <p class="text-nowrap">5.66 ETH</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between underunderCard mt-2">
+                                    <h5 class="underunderCardGreen">The Fantasy Flower</h5>
+                                    <p class="underunderCardBG">BSC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+        <!-- ///////////////////////////////////////////end 100vh 2//////////////////////////////////////// -->ّ
+        <!-- ///////////////////////////////////////////start 100vh 3//////////////////////////////////////// -->
+        <section class="container-fluid m-0 p-0 Third100vh">
+            <img class="backgroundThirdSection" src="assets/images/114.png" alt="">
+            <section class="container-fluid">
+                <section class="container-fluid container-xxl">
+                    <div class="row">
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div>
+                                <div class="headTextGreen">Seller</div>
+                                <div>
+                                    <h1 class="mt-1 text-white">Top Seller</h1>
+                                </div>
+                            </div>
+                            <div><a class="connectWalletButton" href="#">View All Sellers</a></div>
+                        </div>
+                        <div class="flex-wrap mt-5 d-flex align-items-center justify-content-between">
+                            <div data-aos-easing="ease-in-out" data-aos-duration="500" data-aos="fade-up"
+                                class="Third100vhCard">
+                                <div class=" Third100vhCardFigureParent">
+                                    <figure class="m-0 p-0"><img src="assets/images/115.jpg" alt=""></figure>
+                                </div>
+                                <div>
+                                    <h5 class="text-white headTextGreen2 ">Mal Practoe</h5>
+                                    <p class="text-white">120.101 ETH</p>
+                                </div>
+                            </div>
+                            <div data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos="fade-up"
+                                class="Third100vhCard">
+                                <div class=" Third100vhCardFigureParent">
+                                    <figure class="m-0 p-0"><img src="assets/images/116.jpg" alt=""></figure>
+                                </div>
+                                <div>
+                                    <h5 class="text-white headTextGreen2 ">
+                                        Maria Gomej</h5>
+                                    <p class="text-white">140.101 ETH</p>
+                                </div>
+                            </div>
+                            <div data-aos-easing="ease-in-out" data-aos-duration="1500" data-aos="fade-up"
+                                class="Third100vhCard">
+                                <div class=" Third100vhCardFigureParent">
+                                    <figure class="m-0 p-0"><img src="assets/images/117.jpg" alt=""></figure>
+                                </div>
+                                <div>
+                                    <h5 class="text-white headTextGreen2 ">
+                                        Julia Haris</h5>
+                                    <p class="text-white">178.101 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 flex-wrap mt-0 mt-md-5 d-flex align-items-center justify-content-between">
+                            <div data-aos-easing="ease-in-out" data-aos-duration="500" data-aos="fade-up"
+                                class="Third100vhCard">
+                                <div class=" Third100vhCardFigureParent">
+                                    <figure class="m-0 p-0"><img src="assets/images/118.jpg" alt=""></figure>
+                                </div>
+                                <div>
+                                    <h5 class="text-white headTextGreen2 ">
+                                        Mason Hocton</h5>
+                                    <p class="text-white">185.101 ETH</p>
+                                </div>
+                            </div>
+                            <div data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos="fade-up"
+                                class="Third100vhCard">
+                                <div class=" Third100vhCardFigureParent">
+                                    <figure class="m-0 p-0"><img src="assets/images/119.jpg" alt=""></figure>
+                                </div>
+                                <div>
+                                    <h5 class="text-white headTextGreen2 ">
+                                        Mike Roscope</h5>
+                                    <p class="text-white">125.101 ETH</p>
+                                </div>
+                            </div>
+                            <div data-aos-easing="ease-in-out" data-aos-duration="1500" data-aos="fade-up"
+                                class="Third100vhCard">
+                                <div class=" Third100vhCardFigureParent">
+                                    <figure class="m-0 p-0"><img src="assets/images/120.jpg" alt=""></figure>
+                                </div>
+                                <div>
+                                    <h5 class="text-white headTextGreen2 ">Elice Brown</h5>
+                                    <p class="text-white">120.101 ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- ///////////////////////////////////////////end 100vh 3//////////////////////////////////////// -->ّ
+        <!-- ///////////////////////////////////////////start 100vh 4//////////////////////////////////////// -->
+        <section class="container-fluid m-0 p-0 Fourth100vh">
+            <section class="container-fluid container-xxl">
+                <div class="row">
+                    <div class="text-white">
+                        <div class="mt-5">
+                            <h6 class="text-center headTextGreen3">Exclusive Assets</h6>
+                            <h1 class="text-center mt-2">Explore Product</h1>
+                        </div>
+                        <ul class="d-flex flex-md-row flex-column align-items-center justify-content-center mt-5">
+                            <li data-tab="Art" class="Fourth100vhTab ">Art</li>
+                            <li data-tab="Card" class="Fourth100vhTab ">Card</li>
+                            <li data-tab="Collectibles" class="Fourth100vhTab ">Collectibles</li>
+                            <li data-tab="Photo" class="Fourth100vhTab ">Photo</li>
+                        </ul>
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 px-5">
+                            <div id="Art tabAll" class=" Fourth100vhCard tabAll Art">
+                                <figure>
+                                    <img src="assets/images/121.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/107.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Ash Winsley</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️3.2k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">The Fantasy Flower</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Art tabAll" class=" Fourth100vhCard tabAll Art">
+                                <figure>
+                                    <img src="assets/images/123.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/122.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Mash Haris</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️1.8k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Dodo Hide & Seek</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Art" class=" Fourth100vhCard tabAll Art">
+                                <figure>
+                                    <img src=" assets/images/125.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/126.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Mick Donalds</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️3k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Spider Eyes Art</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Card" class=" Fourth100vhCard tabAll Card">
+                                <figure>
+                                    <img src=" assets/images/121.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/127.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Joan Sympson</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️4.2k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Synthwave Painitng</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Card" class=" Fourth100vhCard mt-5 mb-5 tabAll Card">
+                                <figure>
+                                    <img src=" assets/images/110.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/111.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">
+                                                Al Trudo</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️1.7k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Abstract Art</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Collectibles" class=" Fourth100vhCard mt-5 mb-5 tabAll Collectibles">
+                                <figure>
+                                    <img src="assets/images/128.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/109.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Carre Rogan</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️5.2k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Walking On Motion</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Collectibles" class=" Fourth100vhCard mt-5 mb-5 tabAll Collectibles">
+                                <figure>
+                                    <img src=" assets/images/129.jpg" alt="">
+                                </figure>
+                                <div class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/117.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Cody Pengant</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️3k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Abstract Art</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div id="Photo" class="Fourth100vhCard mt-5 mb-5 tabAll Photo">
+                                <figure>
+                                    <img src="assets/images/130.jpg" alt="">
+                                </figure>
+                                <div id="Photo" class="d-flex underCardFourth100vh justify-content-between">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="d-flex ">
+                                            <figure class="profilePictureFourth100vh"><img src="assets/images/113.jpg"
+                                                    alt="">
+                                            </figure>
+                                            <p class="text-nowrap mt-4">Cody Pengant</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-nowrap mt-4">❤️4.2k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start fw-bolder mt-4">
+                                    <h4 class="underunderCardGreenFourth100vh">Tranquility Art</h4>
+                                </div>
+                                <div class="connectWalletButton connectWalletButtonFourth100vh mt-4 text-center">
+                                    <a href="#">Place Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- ///////////////////////////////////////////end 100vh 4//////////////////////////////////////// -->ّ
+        <!-- ///////////////////////////////////////////start 100vh 5//////////////////////////////////////// -->
+        <section class="container-fluid m-0 p-0 Fifth100vh">
+            <img class="backgroundFifthSection" src="assets/images/102.png" alt="">
+            <section class="container-fluid">
+                <section class="container-fluid container-xxl">
+                    <div class="row mt-3">
+                        <div data-aos="fade-right" class="col-12 col-md-6 mt-5">
+                            <img class="w-100 h-100 position-relative img-fluid" src="assets/images/131.jpg" alt="">
+                            <img style="transform: translateY(60px);"
+                                class="w-75 h-75 position-absolute bottom-0 end-0 img-fluid" src="assets/images/132.jpg"
+                                alt="">
+                        </div>
+                        <div data-aos="fade-left"
+                            class=" mt-5 col-12 col-md-6 d-flex flex-wrap align-items-center justify-content-center text-white">
+                            <div class="mt-5">
+                                <p class="headTextGreen4 text-center">How It Works</p>
+                                <h2 class="fw-bolder">Create & Sell Your NFTs</h2>
+                            </div>
+                            <div class="m-0 p-0">
+                                <div class="Fifth100vhBg m-4">
+                                    <div class="d-flex align-items-center justify-content-center"><span
+                                            class="mx-2"><img class="img-fluid w-75" src="assets/images/133.png"
+                                                alt=""></span>
+                                        <h4>Set Up Your Wallet</h4>
+                                    </div>
+                                    <p>Other hand we denoce ighteous and tion and dso beguilde ralized</p>
+                                </div>
+                                <div class="Fifth100vhBg m-4">
+                                    <div class="d-flex align-items-center justify-content-center"><span
+                                            class="mx-2"><img class="img-fluid w-75" src="assets/images/134.png"
+                                                alt=""></span>
+                                        <h4>Create Collection</h4>
+                                    </div>
+                                    <p>Other hand we denoce ighteous and tion and dso beguilde ralized</p>
+                                </div>
+                            </div>
+                            <div class="m-0 p-0">
+                                <div class="Fifth100vhBg m-4">
+                                    <div class="d-flex align-items-center justify-content-center"><span
+                                            class="mx-2"><img class="img-fluid w-75" src="assets/images/135.png"
+                                                alt=""></span>
+                                        <h4>Add Your NFT</h4>
+                                    </div>
+                                    <p>Other hand we denoce ighteous and tion and dso beguilde ralized</p>
+                                </div>
+                                <div class="Fifth100vhBg m-4">
+                                    <div class="d-flex align-items-center justify-content-center"><span
+                                            class="mx-2"><img class="img-fluid w-75" src="assets/images/136.png"
+                                                alt=""></span>
+                                        <h4>List For Sale</h4>
+                                    </div>
+                                    <p>Other hand we denoce ighteous and tion and dso beguilde ralized</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- ///////////////////////////////////////////end 100vh 5//////////////////////////////////////// -->ّ
+        <!-- ///////////////////////////////////////////start 100vh 6//////////////////////////////////////// -->
+        <section class="container-fluid m-0 p-0 sixth100vh">
+            <img class="backgroundsixthSection" src="assets/images/114.png" alt="">
+            <section class="container-fluid container-xxl">
+                <div class="row text-white mt-5">
+                    <div class="mt-5">
+                        <p class="headTextGreen4 mt-5">Most Popular</p>
+                        <h4 class="fw-bolder">Popular Collection</h4>
+                    </div>
+                    <div class="swiper mySwipernew col-12 mb-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/141.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/115.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Cody Pengant</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/142.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/116.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Arshia Farrokhi</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/144.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/117.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Ghorbanian</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/146.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/118.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Young Siron</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/130.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/113.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Old Siron</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/145.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/113.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Mahdi Riyazat</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sixth100vhCard">
+                                    <figure>
+                                        <img src="assets/images/147.jpg" alt="">
+                                    </figure>
+                                    <div class="d-flex underCardSixth100vh justify-content-between">
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="d-flex ">
+                                                <figure class="profilePictureSixth100vh"><img
+                                                        src="assets/images/119.jpg" alt="">
+                                                </figure>
+                                                <p class="text-nowrap mt-4">Golkar</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-nowrap mt-4">❤️4.2k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-paginationnew my-5"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- ///////////////////////////////////////////end 100vh 6//////////////////////////////////////// -->ّ
+        <!-- ///////////////////////////////////////////start footer//////////////////////////////////////// -->
+        <footer class="container-fluid m-0 p-0 footer">
+            <img class="footerthSection" src="assets/images/background-section1.png" alt="">
+            <section class="container-fluid container-xxl">
+                <div class="row text-white mt-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between mt-5">
+                        <div class="col-6 col-md-3 p-2 d-flex flex-column">
+                            <img class="img-fluid w-75 h-75" src="assets/images/101.png" alt="">
+                            <p class="my-5">Lorem ipsum dolor sit amet consec tetur aditonsi soom isotope elit esumo
+                                tempo incidunt labore dolore magna aliqu core tetur adip iscing.</p>
+                            <ul class="d-flex align-items-center justify-content-start p-0">
+                                <li class="footerSocial m-0"><i class=" footerSocial bi bi-instagram"></i></li>
+                                <li class="footerSocial"><i class="footerSocial bi bi-facebook"></i></li>
+                                <li class="footerSocial"><i class="footerSocial bi bi-twitter"></i></li>
+                                <li class="footerSocial"><i class="footerSocial bi bi-linkedin"></i></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class=" liOptionFooter liOptionFooterHead fw-bolder "><a href="#">Company</a></li>
+                                <li class="mt-4 liOptionFooter"><a href="#">NFT</a></li>
+                                <li class="liOptionFooter"><a href="#">Music</a></li>
+                                <li class="liOptionFooter"><a href="#">Trends</a></li>
+                                <li class="liOptionFooter"><a href="#">ETC</a></li>
+                                <li class="liOptionFooter"><a href="#">Price</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="liOptionFooterHead liOptionFooter fw-bolder "><a href="#">Resources</a></li>
+                                <li class="mt-4 liOptionFooter"><a href="#">Home</a></li>
+                                <li class="liOptionFooter"><a href="#">About Us</a></li>
+                                <li class="liOptionFooter"><a href="#">Contact Us</a></li>
+                                <li class="liOptionFooter"><a href="#">Privacy Policy</a></li>
+                                <li class="liOptionFooter"><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class=" liOptionFooter liOptionFooterHead fw-bolder "><a href="#">Marketplace</a>
+                                </li>
+                                <li class="mt-4 liOptionFooter"><a href="#">NFT</a></li>
+                                <li class="liOptionFooter"><a href="#">Music</a></li>
+                                <li class="liOptionFooter"><a href="#">Trends</a></li>
+                                <li class="liOptionFooter"><a href="#">ETC</a></li>
+                                <li class="liOptionFooter"><a href="#">Price</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <p class="text-white text-center my-5">Made With ❤️ <a target="_blank" style="color: #40AD9B;"
+                href="https://arshiafarrokhi.com/">Arshia Farrokhi</a></p>
+        
+        <div class="backToTopButton"><i class="bi bi-arrow-up"></i></div>
+    </main>
+</body>
+<!-- ************swipper************ -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwipernew", {
+        slidesPerView: 4,
+        centeredSlides: true,
+        spaceBetween: 90,
+        grabCursor: true,
+        pagination: {
+            el: ".swiper-paginationnew",
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 90,
+            },
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 90,
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 90,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 90,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 90,
+            },
+        },
+    });
+</script>
+<!-- ************AOS************ -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- ************nav bar************ -->
+<script src="assets/js/navBar.js"></script>
+<!-- ************auto Type************ -->
+<script src="assets/js/autoType.js"></script>
+<!-- ************fix menu scroll************ -->
+<script src="assets/js/fixMenuScroll.js"></script>
+<!-- ************Tab Fourth100************ -->
+<script src="assets/js/Tab.js"></script>
+<!-- ************backToTop************ -->
+<script src="assets/js/backToTop.js"></script>
+</html>
